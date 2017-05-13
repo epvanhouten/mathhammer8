@@ -1,3 +1,3 @@
 ﻿using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("mathhammer8libTester")]
+[assembly: InternalsVisibleTo("MathHammer8LibTester")]

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace mathhammer8lib
+namespace MathHammer8
 {
     internal class RollResult : IEquatable<RollResult>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace mathhammer8lib
+namespace MathHammer8
 {
     internal class BasicRoll
     {

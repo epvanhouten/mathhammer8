@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>    
-    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <TargetFramework>netcoreapp1.1</TargetFramework>    
+    <RootNamespace>MathHammer8.Tester</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\mathhammer8lib\mathhammer8lib.csproj" />
+    <ProjectReference Include="..\mathhammer8lib\MathHammer8Lib.csproj" />
   </ItemGroup>
 
   <ItemGroup>

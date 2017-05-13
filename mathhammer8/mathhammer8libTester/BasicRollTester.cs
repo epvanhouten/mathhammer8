@@ -1,8 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
-using mathhammer8lib;
 
-namespace mathhammer8libTester
+namespace MathHammer8.Tester
 {
     [TestClass]
     public class BasicRollTester
@@ -35,6 +34,30 @@ namespace mathhammer8libTester
         {
             var roll = new BasicRoll(sides);
             Assert.AreEqual(sides, roll.Results.Distinct().Count());
+        }
+
+        [DataTestMethod]
+        [DataRow(3)]
+        [DataRow(6)]
+        public void AllResultsShouldBePositive(int sides)
+        {
+            var rolls = new BasicRoll(sides);
+            foreach(var result in rolls.Results)
+            {
+                Assert.IsTrue(result.Value > 0);
+            }
+        }
+
+        [DataTestMethod]
+        [DataRow(3)]
+        [DataRow(6)]
+        public void AllResultsShouldBeLessThanOrEqualToSideCount(int sides)
+        {
+            var rolls = new BasicRoll(sides);
+            foreach(var result in rolls.Results)
+            {
+                Assert.IsTrue(result.Value <= sides);
+            }
         }
     }
 }

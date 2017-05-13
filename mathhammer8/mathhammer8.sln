@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mathhammer8lib", "mathhammer8lib\mathhammer8lib.csproj", "{8FA07DA3-C921-452B-9676-715A1E7BBE31}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathHammer8Lib", "mathhammer8lib\MathHammer8Lib.csproj", "{8FA07DA3-C921-452B-9676-715A1E7BBE31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mathhammer8libTester", "mathhammer8libTester\mathhammer8libTester.csproj", "{7FB57073-516E-4981-B20A-624F3512BF3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathHammer8LibTester", "mathhammer8libTester\MathHammer8LibTester.csproj", "{7FB57073-516E-4981-B20A-624F3512BF3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
