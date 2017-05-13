@@ -2,9 +2,9 @@
 
 namespace MathHammer8
 {
-    internal class BasicRoll
+    internal class BasicRoll : IRoll
     {
-        public IReadOnlyCollection<RollResult> Results { get; }
+        public IEnumerable<RollResult> Results { get; }
 
         public BasicRoll()
             : this(6)

@@ -10,21 +10,21 @@ namespace MathHammer8.Tester
         public void HasSixResultsByDefault()
         {
             var roll = new BasicRoll();
-            Assert.AreEqual(6, roll.Results.Count, "A basic roll should have 6 results");
+            Assert.AreEqual(6, roll.Results.Count(), "A basic roll should have 6 results");
         }
 
         [TestMethod]
         public void CanSetToHaveThreeSides()
         {
             var roll = new BasicRoll(3);
-            Assert.AreEqual(3, roll.Results.Count, "Should have 3 sides when requested");
+            Assert.AreEqual(3, roll.Results.Count(), "Should have 3 sides when requested");
         }
 
         [TestMethod]
         public void CanSetToHaveSixSides()
         {
             var roll = new BasicRoll(6);
-            Assert.AreEqual(6, roll.Results.Count, "Should have 6 sides when requested. Equivilent to default constructor.");
+            Assert.AreEqual(6, roll.Results.Count(), "Should have 6 sides when requested. Equivilent to default constructor.");
         }
 
         [DataTestMethod]
