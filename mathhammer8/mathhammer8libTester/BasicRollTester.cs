@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Linq;
 using mathhammer8lib;
 
 namespace mathhammer8libTester
@@ -25,6 +26,15 @@ namespace mathhammer8libTester
         {
             var roll = new BasicRoll(6);
             Assert.AreEqual(6, roll.Results.Count, "Should have 6 sides when requested. Equivilent to default constructor.");
+        }
+
+        [DataTestMethod]
+        [DataRow(3)]
+        [DataRow(6)]
+        public void AllResultsShouldBeUnique(int sides)
+        {
+            var roll = new BasicRoll(sides);
+            Assert.AreEqual(sides, roll.Results.Distinct().Count());
         }
     }
 }

@@ -17,7 +17,7 @@ namespace mathhammer8lib
             var resultList = new List<RollResult>(sides);
             for(var sideValue = 1; sideValue <= sides; ++sideValue)
             {
-                resultList.Add(new RollResult());
+                resultList.Add(new RollResult(sideValue));
             }
             Results = resultList;
         }
