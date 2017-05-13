@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using mathhammer8lib;
 
 namespace mathhammer8libTester
 {
@@ -6,8 +7,10 @@ namespace mathhammer8libTester
     public class BasicRollTester
     {
         [TestMethod]
-        public void TestMethod1()
+        public void HasSixResults()
         {
+            var roll = new BasicRoll();
+            Assert.AreEqual(6, roll.Results.Count, "A basic roll should have 6 results");
         }
     }
 }
