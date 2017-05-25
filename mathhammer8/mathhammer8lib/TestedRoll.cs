@@ -13,6 +13,7 @@ namespace MathHammer8
         {
             TargetValue = targetValue;
             Modifier = modifier;
+            Results = TestRoll(roll);
         }
 
         private IEnumerable<RollResult> TestRoll(IRoll rolls)
